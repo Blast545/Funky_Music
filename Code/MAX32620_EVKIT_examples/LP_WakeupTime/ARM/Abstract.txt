@@ -1,0 +1,26 @@
+The 'LP_WakeupTime' example project is a simple program for the MAX32620 
+and MAX32621 microcontroller using the Maxim Integrated MAX3262X Evaluation
+ Kit, compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+This program shows LP0/LP1 wake-up times indicated by GPIO toggles.
+
+Example functionality:                                                   
+  - LP0 and LP1 both wake up to LP3 (run mode).
+  1. LED3 blinks on program start.  - LP3
+  2. Press SW3(P60) to begin. (LED3 on, other LEDs off) - LP3
+  3. Press SW2(P55) to enter LP1. (LED1 on, other LEDs off) - LP1
+  4. Press SW2(P55) to wake-up from LP1. (LED3 on, other LEDs off) - LP3
+  5. Press SW1(P54) to enter LP0. (LED0 on, other LEDs off) - LP0
+  6. Press SW1(P54) to wake-up from LP0 and restart program. (LED3 blinking) - LP3
+     - To measure wake-up times:
+     - LP1 Wake-up - measure from falling edge of P5.5 to falling edge of P0.7
+     - LP0 Wake-up - measure from falling edge of P5.4 to falling edge of P0.7
+ 
+TheLP_WakeupTime Demo is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No jumper configuration is required for the LP_WakeupTime Demo program.

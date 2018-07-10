@@ -1,0 +1,18 @@
+Evaluation Kit Demo
+
+Example functionality:                                                   
+Basic demo showing the functionality of the evaluation kit.
+ 
+ - Sends stdout to serial port at 115200 baud
+ 
+ - Displays data on the OLED display, include image and text
+ 
+ - Blinks LEDs using SysTick timer
+
+The Demo is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No jumper configuration is required for the demo program.

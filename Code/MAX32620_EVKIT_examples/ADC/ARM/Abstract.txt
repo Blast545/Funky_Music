@@ -1,0 +1,22 @@
+The 'ADC' project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated MAX3262X Evaluation Kit, 
+compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+Example functionality:                                                   
+ - ADC Measurement
+ 
+ - Display output on the LCD
+ 
+ - Measurement results via Serial
+ 
+Options to run via interrupt driven measurements (asynchronously) or via polled mode for measurements.
+#undefine USE_INTERRUPTS to operate the demo in polled (synchronous) mode. 
+
+The ADC Demo is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No jumper configuration is required for the ADC Demo program.

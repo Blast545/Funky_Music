@@ -1,0 +1,15 @@
+The 'USB CDC-ACM' project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated MAX3262X Evaluation
+Kit, compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+Example functionality:                                                   
+    Configures the device as an USB-UART adaptor. After loading the project executable, connect a USB cable from CN2 to a host PC. CN1 can also be connected for debug messages. For a Windows PC the driver is the .inf file in the driver folder.
+    1. LED0 should turn on once enumeration is complete
+    2. Connect another UART device to communicate with to UART1 (TX = P2.1, RX = P2.0).
+    3. Open a terminal program for the MAXIM USB-UART adaptor COM port to send/receive data with another UART device.
+        
+    Notes: The auxiliary UART1 connection is optional. The characters received from the PC will be sent back as an echo.
+
+Jumper Configuration:
+  No jumper configuration is required for the ADC Demo program.

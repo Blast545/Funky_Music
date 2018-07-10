@@ -1,0 +1,18 @@
+The 'AES' example project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated MAX3262X Evaluation Kit, 
+compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+Example functionality:                                                   
+ 	
+ 	- Runs encryption and decryption on different key sizes using NIST Monte-Carlo test vectors.
+	- Performs tests using both asynchronous and sychronous operation of the AES peripheral. 
+	- Outputs results via serial port as stdout.
+ 
+The AES example is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No jumper configuration is required for the AES example program.

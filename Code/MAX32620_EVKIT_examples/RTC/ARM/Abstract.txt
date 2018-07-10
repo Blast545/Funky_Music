@@ -1,0 +1,22 @@
+The 'RTC' project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated 'MAXX3262X EV KIT' Evaluation
+Board, compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+Example functionality:                                                   
+ - Configures and starts the RTC with LED alarms
+ - RTC set to 1s ticks with alarms at 3sec and 5sec.
+ - LED0: Turns on when alarm 0 value is reached (3secs)
+ - LED1: Turns on when alarm 1 value is reached (5secs)
+ - LED3: Toggles every 0.5s (LED turns on every 1sec)
+ *
+Operation:
+ - SW1: Push to reset the RTC count to 0 and reset alarm interrupts
+ - SW2: Push to set snooze for alarm 1 - alarm 1 = current timer + 10sec
+The ADC Demo is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No jumper configuration is required for the RTC Demo program.

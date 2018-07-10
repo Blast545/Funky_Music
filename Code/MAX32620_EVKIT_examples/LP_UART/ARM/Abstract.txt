@@ -1,0 +1,12 @@
+Low Power UART Example
+
+This example wakes up and receives data from a transmitter. Connect the TX of
+the transmitter (P2.1) to RX (P2.0) of the receiver. Connect CTS of the
+transmitter (P2.2) to RTS (P2.3) of the receiver. The debugger has the potential
+to reset the receiver as it's transitioning from LP1 to LP3 so it's best to
+disconnect the debugger after programming. Once both devices are programmed,
+reset the transmitter, reset the receiver, press PB0 on the receiver, and press
+PB0 on the transmitter to start the test.
+
+Note: This example requires two Maxim Evaluation Kits, one for the LP_UART_RX
+      application and one for the LP_UART_TX application.

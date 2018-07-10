@@ -1,0 +1,25 @@
+The 'USB_HIDRaw' project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated MAX3262X Evaluation
+Kit, compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+Generic USB HID example that can receive/send 64 bytes of data
+
+Example functionality:                                                   
+Open a COM terminal window for debug messaging.
+    1. Wait for the message "Enumeration complete. Ready to receive or Press SW1 to send 64 bytes..."
+    2. Open the Host GUI, USB HID Terminal.
+    3. If not already connected to device, enter the Product ID: 0x0480 and Vendor ID: 0x0B6A and click Connect.
+    4. Once connected, enter the hex data to send from host to MAX32620 and click Send.
+    5. See the data received by MAX32620 in the COM terminal.
+    6. On the HID terminal click Wait for Data and then push SW1 on the EVK within 7 seconds to send data from MAX32620 to Host.
+    
+    Note: Download and install the example Host GUI, USB HID Terminal from www.maximintegrated.com/evkitsoftware 
+
+The Demo is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No jumper configuration is required for the Demo program.

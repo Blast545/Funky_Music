@@ -1,0 +1,29 @@
+The 'Watchdog' project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated MAX3262X Evaluation
+Kit, compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+Demonstrates a watchdog timer in run mode operation.
+
+Example functionality:   
+
+    1. When the program starts LED3 blinks three times and stops.
+    2. Next, LED0 starts blinking continuously.
+    3. Open a terminal program to see interrupt messages (115200 baud, 8N1).
+ 
+    SW1: Push SW1 to trigger a watchdog reset. This will reset the watchdog before
+         the wait period has expired and trigger an interrupt.
+ 
+    SW2: Push SW2 to trigger a delay and see LED0 stop blinking momentarily.
+         This delay is long enough for the timeout period to expire and trigger a watchdog interrupt.
+
+    SW3: Push SW3 to trigger a longer delay and see the program restart by blinking LED3 three times.
+         This delay is long enough for the reset period to expire and trigger a watchdog reset.
+
+The Watchdog Demo is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No jumper configuration is required for the Watchdog Demo program.

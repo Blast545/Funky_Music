@@ -1,0 +1,28 @@
+The 'USB_HIDKeyboardLP1' project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated MAX3262X Evaluation
+Kit, compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+USB HID keyboard demo with lower power mode (LP1) on suspend
+
+Demonstrates how to configure the USB device controller as a HID keyboard class 
+device. If USB is suspended LP1 is entered and can wakeup on on VBUS. This demo 
+requires a board modification of connecting D+ to a GPIO. See R69 and R70 on the 
+schematic.
+
+Example functionality:                                                   
+    1. LED0 will illuminate once enumeration and configuration is complete.
+    2. Open a text editor on the PC host and place cursor in edit box.
+    3. Pressing pushbutton SW1 will cause a message to be typed in on a virtual
+       keyboard one character at a time.
+    4. To suspend USB put PC host in sleep mode. Observe lower current on VDD12.
+    5. Wake up host PC and observe current on VDD12 is higher and the program 
+       resumes.
+    
+The Demo is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No jumper configuration is required for the Demo program.

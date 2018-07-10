@@ -1,0 +1,19 @@
+The 'SysTick' project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated MAX3262X Evaluation
+Kit, compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+Example functionality:                                                   
+ - Sets up SysTick timer with options for using the internal 96MHz relaxation oscillator or the external 32.768KHz xtal. 
+
+ - Display output on via stdout over serial port
+
+ - Blinks LED0 every SysTick period (50ms with internal RO, 100ms with external xtal)
+ 
+The SysTick example is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No jumper configuration is required for the SysTick example program.

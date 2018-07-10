@@ -1,0 +1,27 @@
+The 'RTX_Blinky' project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated MAX3262X Evaluation
+Board, compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v4.3.0 to 4.5.0).
+
+Example functionality:                                                   
+ - Clock Settings:
+   - SYSCLK = 96.00 MHz
+
+ - SysTick is used in interrupt mode as a counter and is based on the 
+   96.00 MHz Internal Relaxation Oscillator
+ 
+ - The System Clock is set to the 96 MHz internal relaxation oscillator 
+ 
+ - LED0 will blink at approximately 1 second.
+ 
+
+The RTX_Blinky program is available in two different targets:
+
+  MAX3262X RAM:    runs from Internal RAM located on chip
+                   (may be used for target debugging)
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No jumper configuration is required for the RTX_Blinky program.

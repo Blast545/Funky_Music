@@ -1,0 +1,19 @@
+The 'CLKMAN_4MHz' project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated MAX3262X Evaluation Kit, 
+compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+Example functionality:                                                   
+ - Configures device to use the 4MHz internal oscillator.
+
+ - Reconfigures device to run from the 96MHz internal relaxation oscillator. 
+
+ - Outputs information via stdout over serial. 
+  
+The CLKMAN_4MHz example program is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No special jumper configuration is required for this example program.

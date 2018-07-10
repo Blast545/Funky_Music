@@ -1,0 +1,18 @@
+
+Configures and starts four different pulse trains on GPIO LEDs.
+
+ - P3.0 LED0 - PT8 setup as 1Hz continuous signal that outputs 10110b
+ - P3.1 LED1 - PT9 setup as 10Hz continuous square wave
+ - P3.2 LED2 - PT10 setup to loop twice and then start PT11
+ - P3.3 LED3 - PT11 setup to loop twice and then start PT10
+ - P5.4 SW1 - push button setup to stop/start pulse trains
+
+ Note: Interrupts for pulse trains are enabled but the interrupt handler only clears the flags.
+
+The Pulse_Train example is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No jumper configuration is required for the demo program.

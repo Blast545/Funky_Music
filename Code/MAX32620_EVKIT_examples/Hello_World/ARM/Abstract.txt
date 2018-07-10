@@ -1,0 +1,19 @@
+The 'Hello_World' project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated 'MAXX32620 EV KIT' Evaluation
+Board, compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+Example functionality:                                                   
+
+ - The message "Hello World!" is displayed on the Evaluation Kit OLED and 
+   transmitted via the UART on connector CN1 to a host terminal at 
+   115,200 Baud, 8N1. 
+ 
+
+The HelloWorld example program is available in Flash Debug Target
+
+  MAX32620 Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No special jumper configuration is required for the Hello_World program.

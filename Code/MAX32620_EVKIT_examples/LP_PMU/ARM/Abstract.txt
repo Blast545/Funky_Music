@@ -1,0 +1,17 @@
+The 'LP_PMU' example project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated MAX3262X Evaluation Kit, 
+compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0). 
+
+Example functionality:                                                   
+ Uses the PMU/DMA engine with the CPU in LP2 (low-power mode 2).  
+ 	- The PMU blinks LED0 every second based on the RTC's prescaler compare interrupt. 
+ 	- Every 5 seconds the CPU wakes up from LP2 and blinks LED1, LED2, and LED3 in sequence.
+
+The LP_PMU example is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No jumper configuration is required for the AES example program.

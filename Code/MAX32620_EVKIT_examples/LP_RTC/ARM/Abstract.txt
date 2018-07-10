@@ -1,0 +1,32 @@
+The 'LP_RTC' project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated MAX3262X Evaluation Kit, 
+compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+Example functionality:     
+	- Demonstrates entering low power modes 1 and 0 (LP1 and LP0) from LP3 run 
+	  mode.
+	- Uses the Real-Time Clock compare feature to wake the part from LP1/LP0
+
+Operation:
+	1. On power up, device is in LP3 (LED2 and LED3 on)
+	2. Push SW2(P55) push button and the device will go to LP1 sleep mode (only 
+	   LED1 on)
+	3. After 7 seconds the device will wake up (only LED2 on)
+	4. Push SW3(P60) push button and the device will go to LP1 sleep mode (only 
+	   LED1 on)
+	5. The device will wake up every second and toggle LED1 then returns 
+	   to sleep mode
+	6. After 7 seconds the device will stay awake (only LED2 on)
+	4. Push SW1(P54) push button and the device will go to LP0 sleep mode (only 
+	   LED0 on)
+	5. After 5 seconds the device will wake up and restarts (three blinks on 
+	   LED3 then goes to step 1)
+
+The LP_RTC example program is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No special jumper configuration is required for this example program.

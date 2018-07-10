@@ -1,0 +1,20 @@
+The 'UART' project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated MAX3262X Evaluation
+Kit, compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+Example functionality:
+
+This example loops back the TX to the RX on UART1. For this example you must
+connect a jumper across P2.0 to P2.1 and connect P2.2 and P2.3. UART_BAUD and
+the BUFF_SIZE can be changed in this example by setting the desired rate and
+size using the #defines in main.c.
+ 
+The UART Demo is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  P2.0 to P2.1
+  P2.2 to P2.3

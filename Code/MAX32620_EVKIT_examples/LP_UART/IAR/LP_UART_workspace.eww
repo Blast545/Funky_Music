@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\..\..\temp\ME02\Pack\Files\Boards\Maxim\MAX32620_EVKIT\LP_UART\rx\IAR\LP_UART_RX.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\..\..\temp\ME02\Pack\Files\Boards\Maxim\MAX32620_EVKIT\LP_UART\tx\IAR\LP_UART_TX.ewp</path>
+    </project>
+    <batchBuild />
+</workspace>

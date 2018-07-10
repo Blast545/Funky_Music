@@ -1,0 +1,26 @@
+The 'LP_GPIO' example project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated MAX3262X Evaluation Kit, 
+compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+Example functionality:                                                   
+ 	- Configures part to enter Low Power Modes 2, 1 and 0
+ 	- Wakes up from external GPIO push-buttons
+ 	- Lights LEDs to indicate current status.
+
+Operation:
+	1. On power up, device is in LP3 (LED3 on)
+ 	2. Push SW3(P60) push button and the device will go to LP2 sleep mode (LED2 on)
+ 	3. Push SW3(P60) again to wake up from LP2 and enter LP3 (LED3 on)
+	4. Push SW2(P55) push button and the device will go to LP1 sleep mode (LED1 on)
+	5. Push SW2(P55) again to wake up from LP1 and enter LP3 (LED3 on)
+	6. Push SW1(P54) push button and the device will go to LP0 sleep mode (LED0 on)
+	7. Push SW1(P54) again to wake up and restart program (three blinks on LED3 then stays on)
+	
+The LP_GPIO example is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No jumper configuration is required for the AES example program.

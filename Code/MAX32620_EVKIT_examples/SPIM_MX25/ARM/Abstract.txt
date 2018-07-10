@@ -1,0 +1,20 @@
+The 'SPIM_MX25' project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated 'MAXX3262X EV KIT' Evaluation
+Board, compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+Example functionality:                                                   
+    Uses the MX25 SPI Flash Memory on the EvKit to show the SPI Master 
+    functionality. Erases, writes, and then verifies the data. BUFF_SIZE, 
+    MX25_BAUD, MX25_ADDR, and MX25_SPIM_WIDTH can be changed to alter the 
+    communication between the devices. Refer to the schematic for the pinout 
+    and ensure that there are no switches blocking the communication to the 
+    MX25.
+ 
+ The SPIM_MX26 Demo is available in a Flash Debug target.
+
+  MAX32620 Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No jumper configuration is required for the SPIM_MX25 program.

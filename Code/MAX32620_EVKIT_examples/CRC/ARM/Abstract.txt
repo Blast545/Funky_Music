@@ -1,0 +1,17 @@
+The 'CRC' project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated MAX3262X Evaluation Kit, 
+compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+Example functionality:                                                   
+ - Performs multiple CRC calculations using the CRC peripheral. 
+
+ - Outputs results via stdout over serial.
+ 
+The CRC example program is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  No special jumper configuration is required for this example program.

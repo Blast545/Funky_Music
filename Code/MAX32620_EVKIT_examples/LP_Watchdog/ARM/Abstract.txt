@@ -1,0 +1,34 @@
+The 'LP_Watchdog' project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated MAX3262X Evaluation Kit, compliant
+to Cortex Microcontroller Software Interface Standard (CMSIS v2.0).
+
+The example program demonstrates using the nanoring watchdog timer (WDT2) to
+wake-up from LP1 and/or reset the program.
+
+When the program starts, LED3 is turned on (LP3 mode) and LED0 starts blinking
+continuously.
+
+	Open a terminal program to see interrupt messages (115200 baud, 8N1).
+    
+    SW1: Push SW1 to enter LP1 and wake-up based on watchdog timer's wake-up
+    	 period (2 seconds). While in LP1 LED0 stops blinking and LED1 turns on.
+    	 After about 2 seconds the watchdog wake-up period expires and wakes up to
+   	 	 LP3 (LED3 on, LED0 continuous blinking).
+    
+    SW2: Push SW2 to enter LP1 and reset program based on watchdog timer's reset
+	     period (4 seconds).  While in LP1 LED0 stops blinking and LED1 turns on.
+	     After about 4 seconds the watchdog reset period expires and resets the
+    	 program. (LED3 blinks three times).
+    
+    SW3: Push SW3 to trigger a long delay and see the program restart by
+	     blinking LED3 three times. During the delay LED0 will stop blinking. This
+	     delay is long enough for the reset period to expire and trigger a reset (4
+	     seconds).
+ 
+The LP_Watchdog example project is available in a Flash Debug target.
+
+  MAX3262X Flash:runs from Internal Flash located on chip  (used for production
+  or target debugging)
+
+Jumper Configuration:
+No jumper configuration is required for the demo program.

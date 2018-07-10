@@ -1,0 +1,22 @@
+The 'I2C Loopback' example project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated 'MAXX32620 EV KIT' Evaluation
+Board, compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+Example functionality:                                                   
+
+ - I2C Master connects to internal I2C slave, performing a loop-back style test.
+
+ - Uses stdout via serial port at 115200 baud to display program status.
+
+The I2C Loopback example program is available in Flash Debug Target
+
+  MAX32620 Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Configuration:
+  	Connect the following prior to executing the example:
+ 		- P3.4 to P1.6
+        - P3.5 to P1.
+        - Jumpers(JP21 and JP22) must be pulled up to the proper I/O
+          voltage. Refer to jumper JP27 to determine the I/O voltage.

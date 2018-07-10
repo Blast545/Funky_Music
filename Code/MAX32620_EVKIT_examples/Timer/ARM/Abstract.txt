@@ -1,0 +1,25 @@
+The 'Timer' project is a simple program for the MAX32620 and MAX32621
+microcontroller using the Maxim Integrated MAX3262X Evaluation
+Kit, compliant to Cortex Microcontroller Software Interface Standard (CMSIS
+v2.0).
+
+Example functionality:                                                   
+
+Configures and starts four different timers.
+
+    PWM Timer        - Outputs a PWM signal (2Hz, 30% duty cycle) on P3.0 LED0
+    Continuous Timer - Outputs a continuous 300ms timer on P3.1 LED1 (GPIO toggles every 300ms)
+    One Shot Timer   - Starts a one shot time - P3.2 LED2 turns on when one shot time (1 sec) is complete
+                       Press P54 SW1 to start the one shot timer again
+    Counter Timer -    Counts the number of falling edges on P0.4 up to 5 and then turns on P3.3 LED3
+                       On the EV kit, connect P5.5 to P0.4 and use SW2 to change P0.4 input state
+    Note: For the counter timer, LED3 may appear to turn on/off sooner than 5 counts because of debounce
+          on the switch creating extra edges/counts. 
+
+The Timer Demo is available in a Flash Debug target.
+
+  MAX3262X Flash:  runs from Internal Flash located on chip
+                   (used for production or target debugging)
+
+Jumper Configuration:
+  Connect P5.5 to P0.4 to increment the Counter Timer using SW2 push button.
