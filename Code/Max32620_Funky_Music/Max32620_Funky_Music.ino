@@ -1,5 +1,7 @@
 /*
- * Program to get ADC info and turn on lights based on the rhythm
+ * Program to get ADC info and turn on lights based on the rhythms
+ * @author: Blast_545
+ * @email: j.j.perez13@hotmail.comm
  * 
 */
 
@@ -207,6 +209,10 @@ void Process_ADC_Data(int err){
 void setup() {
   // Configure the Serial port communication, only used if debug is enabled
   DEBUG_CMD(Serial.begin(115200);)
+  
+  // Keep the device ON if connected to power using a battery
+  pinMode(P2_2, OUTPUT);
+  digitalWrite(P2_2, HIGH);
   
   // Init I2C module, and configure VSYS voltage to 4.8V
   Wire2.begin();
@@ -518,7 +524,9 @@ void calibrateVariables(){
 /* Method used to power off the system */
 void powerOff(){
   Serial.println("Powering off...");
-  // TO BE IMPLEMENTED
+  digitalWrite(P2_2, LOW);
+  // If using USB as power, output some text to the serial port
+  // blink a red led, and continue  
   digitalWrite(LED_BUILTIN, LOW);
   delay(1000);
   digitalWrite(LED_BUILTIN, HIGH);
